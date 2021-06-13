@@ -492,6 +492,58 @@ ul {
   fill: var(--ico-ligt-accent-color);
 }
 
+.subscribe {
+display: flex;
+flex-direction: column;
+margin-top: 12px;
+margin-left: 93px;
+}
+
+.sscr-inpt-mail {
+  align-items: center;
+  width: 358px;
+  height: 50px;
+  padding: 0 16px;
+  margin-right: 12px;
+  overflow: hidden;
+  background-color: var(--background-footer-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.250;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.sscr-btn-send {
+  height: 50px;
+  background-color: var(--touch-color);
+  padding: 6px 22px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px #00000026;
+  text-align: center;
+}
+.sscr-btn-text{
+  display: inline-flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+  color: var(--footer-color);
+}
+.sscr-btn-ico {
+  margin-left: 10px;
+  fill: var(--footer-color);
+}
+
 /* --- Modal window --- */
 
 .backdrop {
