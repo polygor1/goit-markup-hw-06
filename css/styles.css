@@ -519,7 +519,10 @@ margin-left: 93px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
+.sscr-inpt-mail:hover,
+.sscr-inpt-mail:focus {
+  color: var(--footer-color);
+}
 .sscr-btn-send {
   height: 50px;
   background-color: var(--touch-color);
@@ -528,6 +531,10 @@ margin-left: 93px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px #00000026;
   text-align: center;
+}
+.sscr-btn-send:hover,
+.sscr-btn-send:focus{
+  cursor: pointer;
 }
 .sscr-btn-text{
   display: inline-flex;
@@ -558,14 +565,12 @@ margin-left: 93px;
   opacity: 0;
   pointer-events: none;
 }
-
 .modal {
   display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
   width: 528px;
   height: 581px;
   background: var(--face-color);
