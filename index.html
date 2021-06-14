@@ -434,7 +434,7 @@
         </svg>
       </button>
       <div class="callback" role="group">
-        <h2>Оставьте свои данные, мы вым перезвоним</h2>
+        <h2>Оставьте свои данные, мы вам перезвоним</h2>
         <form class="callback-form">
           <label class="callback-label">
             <p class="callback-label-text">Имя</p>
@@ -445,32 +445,33 @@
               <input type="text" name="name" autofocus class="callback-label-input" />
             </div>
           </label>
-          <div>
-            <label>
-              Телефон
-              <input type="tel" name="tel" />
-            </label>
-          </div>
-          <div>
-            <label>
-              Почта
-              <input type="email" name="email" />
-            </label>
-          </div>
-          <div>
-            <label>
-              Комментарий
-              <textarea name="feedback" placeholder="Введите текст"></textarea>
-            </label>
-          </div>
-          <div>
-            <label>
-              <input type="checkbox" name="hobby" value="consent" checked />
-              <a> Соглашаюсь с рассылкой и принимаю </a>
-              <a href="#">Условия договора</a>
-            </label>
-          </div>
-
+          <label class="callback-label">
+            <p class="callback-label-text">Телефон</p>
+            <div class="callback-label-wraper touch-transform">
+              <svg class="callback-ico touch-transform" width="18" height="18">
+                <use href="./images/ico-ns.svg#icon-phone"></use>
+              </svg>
+              <input type="tel" name="tel" autofocus class="callback-label-input" />
+            </div>
+          </label>
+          <label class="callback-label">
+            <p class="callback-label-text">Почта</p>
+            <div class="callback-label-wraper touch-transform">
+              <svg class="callback-ico touch-transform" width="18" height="18">
+                <use href="./images/ico-ns.svg#icon-email"></use>
+              </svg>
+              <input type="email" name="email" autofocus class="callback-label-input" />
+            </div>
+          </label>
+          <label class="callback-label">
+            <p class="callback-label-text">Комментарий</p>
+            <textarea class="callback-label-comment" name="feedback" placeholder="Введите текст"></textarea>
+          </label>
+          <label>
+            <input type="checkbox" name="hobby" value="consent" />
+            <a> Соглашаюсь с рассылкой и принимаю </a>
+            <a href="#">Условия договора</a>
+          </label>
           <button type="submit">Отправить</button>
         </form>
       </div>
