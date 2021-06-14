@@ -91,8 +91,8 @@ ul {
   margin: 0 auto;
 }
 .touch-transform {
-  transition-property: color, fill, background-color, border, box-shadow,
-    opacity, transform;
+  transition-property: color, fill, background-color, 
+    border, box-shadow, opacity, transform;
   transition-duration: 1250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -611,14 +611,17 @@ ul {
   /* display: flex;
   flex-direction: column; */
 }
+
 .callback-form {
   margin-top: 12px;
 }
+
 .callback-label {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
+
 .callback-label-text {
   font-style: normal;
   font-weight: 400;
@@ -627,24 +630,45 @@ ul {
   letter-spacing: 0.01em;
   color: var(--regular-color);
 }
-.callback-label-input {
+
+.callback-label-wraper {
   width: 448px;
   height: 40px;
   border: 1px solid #21212133;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 12px 12px 12px 42px;
-}
-.callback-label-input:hover,
-.callback-label-input:focus {
-  border: 1px solid var(--ico-accent-color);
-  fill: var(--ico-accent-color);
+  overflow: hidden;
+  z-index: 3;
 }
 .callback-ico {
   position: absolute;
   margin: 11px 12px;
   fill: var(--ico-title-color);
+  z-index: 3;
 }
+
+.callback-label-input {
+  position: absolute;
+  width: 446px;
+  height: 38px;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 11px 11px 11px 41px;
+}
+
+.callback-label-wraper:hover,
+.callback-label-wraper:focus {
+  border: 1px solid var(--ico-accent-color);
+}
+
+.callback-label-wraper:hover .callback-ico,
+.callback-label-wraper:focus .callback-ico {
+  fill: var(--ico-accent-color);
+}
+
+
+
 
 /* === PORTFOLIO === */
 

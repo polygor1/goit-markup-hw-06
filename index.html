@@ -561,18 +561,29 @@
             <use href="./images/ico-ns.svg#icon-closed"></use>
           </svg>
         </button>
-        <div class="callback">
+        <div class="callback" role="group">
           <h2>Оставьте свои данные, мы вым перезвоним</h2>
           <form class="callback-form">
-            <div class="callback-label">
-              <label class="callback-label-text">
-                <p>Имя</p>
-                <svg class="callback-ico" width="18" height="18">
-                  <use href="./images/ico-ns.svg#icon-person"></use>
-                </svg>
-                <input type="text" name="name" autofocus class="callback-label-input"/>
+              <label class="callback-label">
+
+                <p class="callback-label-text">Имя</p>
+
+                <div class="callback-label-wraper">
+
+                  <svg
+                    class="callback-ico touch-transform"
+                    width="18"
+                    height="18"
+                  >
+                    <use href="./images/ico-ns.svg#icon-person"></use>
+                  </svg>
+
+                  <input type="text" name="name" autofocus class="callback-label-input touch-transform"/>
+
+                </div>
+
               </label>
-            </div>
+
             <div>
               <label>
                 Телефон
