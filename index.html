@@ -528,40 +528,83 @@
           </li>
           <li class="subscribe">
             <h3 class="join-text">Подпишитесь на рассылку</h3>
-            <form class="js-mailing-form">
-              <input
-                type="email"
-                name="sscr-email"
-                id="sscr-email"
-                placeholder="E-mail"
-                class="sscr-inpt-mail"
-              />
+            <form class="js-mailing-form" autocomplete="on">
               <label for="sscr-email">
-                <button type="submit" class="sscr-btn-send">
-                  <div class="sscr-btn-text">
-                    <p>Подписаться</p>
-                    <svg class="sscr-btn-ico" width="24" height="24">
-                      <use href="./images/ico-ns.svg#icon-send"></use>
-                    </svg>
-                  </div>
-                </button>
+                <input
+                  type="email"
+                  name="sscr-email"
+                  id="sscr-email"
+                  placeholder="E-mail"
+                  class="sscr-inpt-mail"
+                />
               </label>
+              <button type="submit" class="sscr-btn-send">
+                <div class="sscr-btn-text">
+                  <p>Подписаться</p>
+                  <svg class="sscr-btn-ico" width="24" height="24">
+                    <use href="./images/ico-ns.svg#icon-send"></use>
+                  </svg>
+                </div>
+              </button>
             </form>
           </li>
         </ul>
       </div>
     </footer>
+
     <!-- Modal window -->
+
     <div class="backdrop is-hidden touch-transform" data-modal>
       <div class="modal">
-        <p>
-          <!-- Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam consequatur aperiam quasi commodi eum maiores quod quibusdam nisi sunt minus? -->
-        </p>
         <button class="cls-button" data-modal-close>
           <svg class="icon-window touch-transform" width="11" height="11">
             <use href="./images/ico-ns.svg#icon-closed"></use>
           </svg>
         </button>
+        <div class="callback">
+          <h2>Оставьте свои данные, мы вым перезвоним</h2>
+          <form class="callback-form">
+            <div class="callback-label">
+              <label class="callback-label-text">
+                <p>Имя</p>
+                <svg class="callback-ico" width="18" height="18">
+                  <use href="./images/ico-ns.svg#icon-person"></use>
+                </svg>
+                <input type="text" name="name" autofocus class="callback-label-input"/>
+              </label>
+            </div>
+            <div>
+              <label>
+                Телефон
+                <input type="tel" name="tel" />
+              </label>
+            </div>
+            <div>
+              <label>
+                Почта
+                <input type="email" name="email" />
+              </label>
+            </div>
+            <div>
+              <label>
+                Комментарий
+                <textarea
+                  name="feedback"
+                  placeholder="Введите текст"
+                ></textarea>
+              </label>
+            </div>
+            <div>
+              <label>
+                <input type="checkbox" name="hobby" value="consent" checked />
+                <a> Соглашаюсь с рассылкой и принимаю </a>
+                <a href="#">Условия договора</a>
+              </label>
+            </div>
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -67,10 +67,16 @@ h3 {
 }
 h2,
 h3,
-.portfolio-text h3 {
+.portfolio-text h3,
+.callback h2 {
   font-weight: 700;
   color: var(--title-color);
 }
+.callback h2 {
+  font-size: 20px;
+  line-height: 1.15;
+}
+
 ul {
   list-style: none;
 }
@@ -493,10 +499,10 @@ ul {
 }
 
 .subscribe {
-display: flex;
-flex-direction: column;
-margin-top: 12px;
-margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  margin-left: 93px;
 }
 
 .sscr-inpt-mail {
@@ -515,7 +521,7 @@ margin-left: 93px;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 1.250;
+  line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -533,10 +539,10 @@ margin-left: 93px;
   text-align: center;
 }
 .sscr-btn-send:hover,
-.sscr-btn-send:focus{
+.sscr-btn-send:focus {
   cursor: pointer;
 }
-.sscr-btn-text{
+.sscr-btn-text {
   display: inline-flex;
   align-items: center;
   font-family: inherit;
@@ -551,7 +557,7 @@ margin-left: 93px;
   fill: var(--footer-color);
 }
 
-/* --- Modal window --- */
+/* === MODAL WINDOW === */
 
 .backdrop {
   position: fixed;
@@ -566,7 +572,6 @@ margin-left: 93px;
   pointer-events: none;
 }
 .modal {
-  display: flex;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -577,6 +582,7 @@ margin-left: 93px;
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
     0px 2px 1px #00000033;
   border-radius: 4px;
+  padding: 40px;
 }
 .cls-button {
   display: flex;
@@ -599,6 +605,45 @@ margin-left: 93px;
 }
 .icon-window {
   fill: var(--logo-dark);
+}
+
+.callback {
+  /* display: flex;
+  flex-direction: column; */
+}
+.callback-form {
+  margin-top: 12px;
+}
+.callback-label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.callback-label-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.667;
+  letter-spacing: 0.01em;
+  color: var(--regular-color);
+}
+.callback-label-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid #21212133;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 12px 12px 42px;
+}
+.callback-label-input:hover,
+.callback-label-input:focus {
+  border: 1px solid var(--ico-accent-color);
+  fill: var(--ico-accent-color);
+}
+.callback-ico {
+  position: absolute;
+  margin: 11px 12px;
+  fill: var(--ico-title-color);
 }
 
 /* === PORTFOLIO === */
