@@ -436,7 +436,7 @@
       <div class="callback" role="group">
         <h2>Оставьте свои данные, мы вам перезвоним</h2>
         <form class="callback-form">
-          <label class="callback-label">
+          <label for="name" class="callback-label">
             <p class="callback-label-text">Имя</p>
             <div class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
@@ -445,7 +445,7 @@
               <input type="text" name="name" autofocus class="callback-label-input" />
             </div>
           </label>
-          <label class="callback-label">
+          <label for="tel" class="callback-label">
             <p class="callback-label-text">Телефон</p>
             <div class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
@@ -454,7 +454,7 @@
               <input type="tel" name="tel" autofocus class="callback-label-input" />
             </div>
           </label>
-          <label class="callback-label">
+          <label for="email" class="callback-label">
             <p class="callback-label-text">Почта</p>
             <div class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
@@ -463,17 +463,24 @@
               <input type="email" name="email" autofocus class="callback-label-input" />
             </div>
           </label>
-          <label class="callback-label">
+          <label for="feedback" class="callback-label comment">
             <p class="callback-label-text">Комментарий</p>
             <textarea class="callback-label-comment" name="feedback" placeholder="Введите текст"></textarea>
           </label>
-          <label>
-            <input type="checkbox" name="hobby" value="consent" />
-            <a> Соглашаюсь с рассылкой и принимаю </a>
-            <a href="#">Условия договора</a>
-          </label>
-          <button type="submit">Отправить</button>
         </form>
+        <div>
+          <label for="contract" class="modal-check">
+            <input type="checkbox" name="contract" value="consent" />
+            <span>
+              <svg class="check-btn-ico" width="16" height="15">
+                <use href="./images/ico-ns.svg#icon-chkbox"></use>
+              </svg>
+            </span>
+          </label>
+          <a class="modal-text">Соглашаюсь с рассылкой и принимаю</a>
+          <a href="#" class="modal-text accent-text">Условия договора</a>
+        </div>
+        <button type="submit" class="submit-btn touch-transform">Отправить</button>
       </div>
     </div>
   </div>

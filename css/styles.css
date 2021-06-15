@@ -7,6 +7,7 @@
   --logo-dark: #000000;
   --touch-color: #2196f3;
   --ico-accent-color: #2196f3;
+  --btn-send-color: #188ce8;
   --ico-ligt-accent-color: #ffffff;
   --ico-title-color: #212121;
   --ico-regular-color: #afb1b8;
@@ -21,7 +22,6 @@
   --face-color: #ffffff;
   --footer-color: #ffffff;
   --footer-eadr-color: #ffffff99;
-  --backgound-dark-face-color: #2f303a;
   --background-face-color: #c4c4c4;
   --background-footer-color: #2f303a;
   --background-team-color: #f5f4fa;
@@ -281,7 +281,7 @@ ul {
 }
 .features-text {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 1.714;
   letter-spacing: 0.03em;
   margin-top: 10px;
 }
@@ -498,14 +498,12 @@ ul {
   background-color: var(--ico-accent-color);
   fill: var(--ico-ligt-accent-color);
 }
-
 .subscribe {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
   margin-left: 93px;
 }
-
 .sscr-inpt-mail {
   align-items: center;
   width: 358px;
@@ -578,7 +576,6 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 528px;
-  height: 581px;
   background: var(--face-color);
   box-shadow: 0px 1px 3px #0000001f, 0px 1px 1px #00000024,
     0px 2px 1px #00000033;
@@ -609,12 +606,15 @@ ul {
 }
 
 .callback {
-  /* display: flex;
-  flex-direction: column; */
+  display: flex;
+  flex-direction: column;
 }
 
 .callback-form {
+  display: flex;
+  flex-direction: column;
   margin-top: 12px;
+  margin-bottom: 20px;
 }
 
 .callback-label {
@@ -622,10 +622,10 @@ ul {
   flex-direction: column;
   margin-bottom: 10px;
 }
-
+.comment {
+  margin-bottom: 0;
+}
 .callback-label-text {
-  font-style: normal;
-  font-weight: 400;
   font-size: 12px;
   line-height: 1.667;
   letter-spacing: 0.01em;
@@ -688,6 +688,70 @@ ul {
   line-height: 1.667;
   letter-spacing: 0.01em;
   color: #75757580;
+}
+.modal-check {
+  width: 16px;
+  height: 15px;
+  position: relative;
+}
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox'] + span {
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* fill: var(--ico-title-color); */
+  cursor: pointer;
+}
+
+input[type='checkbox']:checked + span {
+  /* fill: var(--ico-accent-color); */
+}
+
+.check-btn-ico {
+  /* fill: var(--ico-title-color); */
+  top: 50%;
+  left: 50%;
+  /* transform: translate(-50%, -50%); */
+  cursor: pointer;
+}
+
+.modal-text {
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--regular-color);
+  margin-left: 7px;
+}
+
+.accent-text {
+  text-decoration-line: underline;
+  color: var(--touch-color);
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 200px;
+  height: 50px;
+  background: var(--ico-accent-color);
+  box-shadow: 0px 4px 4px #00000026;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--ico-ligt-accent-color);
+  margin: 30px auto 0;
+  cursor: pointer;
+}
+.submit-btn:hover,
+.submit-btn:focus {
+  background: var(--btn-send-color);
 }
 
 /* === PORTFOLIO === */
