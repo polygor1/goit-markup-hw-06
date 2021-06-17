@@ -436,7 +436,7 @@
       <div class="callback" role="group">
         <h2>Оставьте свои данные, мы вам перезвоним</h2>
         <form class="callback-form">
-          <label for="name" class="callback-label">
+          <label for="name" class="callback-label" required>
             <p class="callback-label-text">Имя</p>
             <div class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
@@ -445,7 +445,7 @@
               <input type="text" name="name" autofocus class="callback-label-input" />
             </div>
           </label>
-          <label for="tel" class="callback-label">
+          <label for="tel" class="callback-label" required>
             <p class="callback-label-text">Телефон</p>
             <div class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
@@ -454,7 +454,7 @@
               <input type="tel" name="tel" autofocus class="callback-label-input" />
             </div>
           </label>
-          <label for="email" class="callback-label">
+          <label for="email" class="callback-label" required>
             <p class="callback-label-text">Почта</p>
             <div class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
@@ -469,8 +469,8 @@
           </label>
         </form>
         <div>
+          <input type="checkbox" name="contract" value="consent" />
           <label for="contract" class="modal-check">
-            <input type="checkbox" name="contract" value="consent" />
             <span>
               <svg class="check-btn-ico" width="16" height="15">
                 <use href="./images/ico-ns.svg#icon-chkbox"></use>
