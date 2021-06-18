@@ -408,15 +408,14 @@
           <h3 class="join-text">Подпишитесь на рассылку</h3>
           <form class="js-mailing-form" autocomplete="on">
             <label for="sscr-email">
-              <input type="email" name="sscr-email" id="sscr-email" placeholder="E-mail" class="sscr-inpt-mail" />
+              <input type="email" name="sscr-email" id="sscr-email" placeholder="E-mail" class="sscr-inpt-mail"
+                required />
             </label>
             <button type="submit" class="sscr-btn-send">
-              <div class="sscr-btn-text">
-                <p>Подписаться</p>
-                <svg class="sscr-btn-ico" width="24" height="24">
-                  <use href="./images/ico-ns.svg#icon-send"></use>
-                </svg>
-              </div>
+              Подписаться
+              <svg class="sscr-btn-ico" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
             </button>
           </form>
         </li>
@@ -430,83 +429,65 @@
     <div class="modal">
       <button class="cls-button" data-modal-close>
         <svg class="icon-window touch-transform" width="11" height="11">
-          <use href="./images/ico-ns.svg#icon-closed"></use>
+          <use href="./images/icons.svg#icon-closed"></use>
         </svg>
       </button>
       <div class="callback" role="group">
         <h2>Оставьте свои данные, мы вам перезвоним</h2>
         <form class="callback-form">
-          <label for="name" class="callback-label" required>
+          <label for="name" class="callback-label">
             <span class="callback-label-text">Имя</span>
             <span class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
-                <use href="./images/ico-ns.svg#icon-person"></use>
+                <use href="./images/icons.svg#icon-person"></use>
               </svg>
-              <input type="text" name="name" autofocus class="callback-label-input" />
+              <input type="text" name="name" class="callback-label-input" id="name" required />
             </span>
           </label>
-          <label for="tel" class="callback-label" required>
+          <label for="tel" class="callback-label">
             <span class="callback-label-text">Телефон</span>
             <span class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
-                <use href="./images/ico-ns.svg#icon-phone"></use>
+                <use href="./images/icons.svg#icon-phone"></use>
               </svg>
-              <input type="tel" name="tel" autofocus class="callback-label-input" />
+              <input type="tel" name="tel" class="callback-label-input" id="tel" required />
             </span>
           </label>
-          <label for="email" class="callback-label" required>
+          <label for="email" class="callback-label">
             <span class="callback-label-text">Почта</span>
             <span class="callback-label-wraper touch-transform">
               <svg class="callback-ico touch-transform" width="18" height="18">
-                <use href="./images/ico-ns.svg#icon-email"></use>
+                <use href="./images/icons.svg#icon-email"></use>
               </svg>
-              <input type="email" name="email" autofocus class="callback-label-input" />
+              <input type="email" name="email" class="callback-label-input" id="email" required />
             </span>
           </label>
           <label for="feedback" class="callback-label comment">
             <span class="callback-label-text">Комментарий</span>
-            <textarea class="callback-label-comment" name="feedback" placeholder="Введите текст"></textarea>
+            <textarea class="callback-label-comment" name="feedback" id="feedback" placeholder="Введите текст">
+            </textarea>
           </label>
         </form>
         <div class="checker">
-          <input type="checkbox" class="check-box" name="contract" value="consent" id="consent">
+          <input type="checkbox" class="check-box" name="contract" value="consent" id="consent" required>
           <label class="check-label" for="consent">
-            <svg class="check-btn-ico" width="16" height="15">
-              <use href="./images/ico-ns.svg#icon-chkbox"></use>
+            <svg class="check-ico touch-transform" width="16" height="15">
+              <use href="./images/icons.svg#icon-chkbox"></use>
             </svg>
-            <svg class="check-btn-ico-check" width="16" height="15">
-              <use href="./images/ico-ns.svg#icon-chkbox-check"></use>
+            <svg class="check-ico-check touch-transform" width="16" height="15">
+              <use href="./images/icons.svg#icon-chkbox-check"></use>
             </svg>
             <span class="modal-text">Соглашаюсь с рассылкой и принимаю</span>
             <a href="#" class="modal-text accent-text">Условия договора</a>
 
           </label>
-
         </div>
-
-        <!--  -->
-
-
-        <!--  -->
-
-
         <button type="submit" class="submit-btn touch-transform">Отправить</button>
       </div>
     </div>
   </div>
   <script src="./js/modal.js"></script>
-  <!-- <script>
-      (() => {
-        document
-          .querySelector('js-mailing-form')
-          .addEventListener('submit', e => {
-            e.preventDefault();
-            new FormData(e.currentTarget).forEach((value, name) =>
-              console.log('${name}: ${value}'),
-            );
-          });
-      })();
-    </script> -->
+
 </body>
 
 </html>

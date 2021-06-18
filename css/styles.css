@@ -8,7 +8,8 @@
   --touch-color: #2196f3;
   --ico-accent-color: #2196f3;
   --btn-send-color: #188ce8;
-  --ico-ligt-accent-color: #ffffff00;
+  --ico-ligt-accent-color: #ffffff;
+  --ico-transparent-color: #ffffff00;
   --ico-title-color: #212121;
   --ico-regular-color: #afb1b8;
   --ico-custom-color: #afb1b8;
@@ -34,7 +35,6 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  /* outline: none; */
 }
 img {
   display: block;
@@ -94,7 +94,7 @@ ul {
 .touch-transform {
   transition-property: color, fill, background-color, border, box-shadow,
     opacity, transform;
-  transition-duration: 1250ms;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .current {
@@ -529,28 +529,28 @@ ul {
   color: var(--footer-color);
 }
 .sscr-btn-send {
+  display: inline-flex;
+  align-items: center;
   height: 50px;
   background-color: var(--touch-color);
   padding: 6px 22px;
   border: none;
   border-radius: 4px;
   box-shadow: 0px 4px 4px #00000026;
-  text-align: center;
-}
-.sscr-btn-send:hover,
-.sscr-btn-send:focus {
-  cursor: pointer;
-}
-.sscr-btn-text {
-  display: inline-flex;
-  align-items: center;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
   color: var(--footer-color);
+  text-align: center;
 }
+.sscr-btn-send:hover,
+.sscr-btn-send:focus {
+  cursor: pointer;
+}
+
 .sscr-btn-ico {
   margin-left: 10px;
   fill: var(--footer-color);
@@ -597,26 +597,22 @@ ul {
   border: 1px solid #0000001a;
   box-sizing: border-box;
 }
+.icon-window {
+  fill: var(--logo-dark);
+}
 .cls-button:hover .icon-window,
 .cls-button:focus .icon-window {
   fill: var(--touch-color);
 }
-.icon-window {
-  fill: var(--logo-dark);
-}
-
 .callback {
   display: flex;
   flex-direction: column;
 }
-
 .callback-form {
-  display: flex;
   flex-direction: column;
   margin-top: 12px;
   margin-bottom: 20px;
 }
-
 .callback-label {
   display: flex;
   flex-direction: column;
@@ -631,8 +627,8 @@ ul {
   letter-spacing: 0.01em;
   color: var(--regular-color);
 }
-
 .callback-label-wraper {
+  display: flex;
   width: 448px;
   height: 40px;
   border: 1px solid #21212133;
@@ -641,14 +637,12 @@ ul {
   overflow: hidden;
   z-index: 3;
 }
-
 .callback-ico {
   position: absolute;
   margin: 11px 12px;
   fill: var(--ico-title-color);
   z-index: 3;
 }
-
 .callback-label-input {
   position: absolute;
   width: 446px;
@@ -658,7 +652,6 @@ ul {
   border-radius: 4px;
   padding: 11px 11px 11px 41px;
 }
-
 .callback-label-wraper:hover,
 .callback-label-wraper:focus {
   border: 1px solid var(--ico-accent-color);
@@ -693,49 +686,37 @@ ul {
 /* ---checker--- */
 
 .checker {
-  /* display: block; */
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
 }
-
 .check-box {
   appearance: none;
   position: relative;
-  /* display: flex; */
-  top: 0;
-  left: 0;
-  width: 16px;
-  height: 15px;
-  /* cursor: pointer; */
 }
-
 .check-label {
   position: relative;
 }
-
-.check-btn-ico,
-.check-btn-ico-check {
+.check-ico,
+.check-ico-check {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
   cursor: pointer;
 }
-.check-btn-ico {
+
+.check-ico {
   fill: var(--ico-title-color);
 }
-
-.check-btn-ico-check {
-  fill: var(--ico-ligt-accent-color);
+.check-ico-check {
+  fill: var(--ico-transparent-color);
 }
-.check-box:checked + .check-label .check-btn-ico-check {
+.check-box:checked + .check-label .check-ico-check {
   fill: var(--ico-accent-color);
-  background-color: rgba(241, 121, 187, 0.296);
 }
-
 .modal-text {
   font-size: 14px;
   line-height: 1.714;
@@ -743,7 +724,6 @@ ul {
   color: var(--regular-color);
   margin-left: 23px;
 }
-
 .accent-text {
   text-decoration-line: underline;
   color: var(--touch-color);
@@ -752,6 +732,7 @@ ul {
 }
 
 /* ---send btn--- */
+
 .submit-btn {
   width: 200px;
   height: 50px;
