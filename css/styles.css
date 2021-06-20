@@ -498,11 +498,13 @@ ul {
   background-color: var(--ico-accent-color);
   fill: var(--ico-ligt-accent-color);
 }
+
 .subscribe {
   display: flex;
   flex-direction: column;
   margin-top: 12px;
-  margin-left: 93px;
+  margin-left: auto;
+  margin-right: 0;
 }
 .sscr-inpt-mail {
   align-items: center;
